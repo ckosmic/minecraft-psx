@@ -8,5 +8,9 @@ A Minecraft shader pack that mimics PlayStation 1 graphics.
 
 Clone the repo and place it in your shaderpacks folder: `%appdata%\.minecraft\shaderpacks` or download the latest release and place it into your shaderpacks folder.
 
+## Known Issues
+
+- Beacon beams tilt and do weird things due to [this Optifine bug](https://github.com/sp614x/optifine/issues/4905).  If anyone knows the block entity ID of beacon beams or whatever it is to single it out in gbuffers_block, please let me know.
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)

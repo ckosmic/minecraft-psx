@@ -1,0 +1,20 @@
+option.affine_mapping=Affine Mapping
+option.affine_clamp=Texcoord Bounds
+option.affine_clamp_enabled=Clamp Texcoord Bounds
+
+option.vertex_inaccuracy_terrain=Terrain Vertex Inaccuracy
+option.vertex_inaccuracy_entities=Entity Vertex Inaccuracy
+option.vertex_inaccuracy_hand=Viewmodel Vertex Inaccuracy
+
+option.resolution_scale=Resolution Scale
+option.dither_amount=Dithering Amount
+option.color_depth=Color Depth
+option.fog_distance=Fog Distance
+option.fog_enabled=Enable Depth Fog
+
+screen.AFFINE_SCREEN=Affine Mapping Settings
+screen.AFFINE_SCREEN.comment=Options related to texture warping.
+screen.MESH_SCREEN=Mesh Settings
+screen.MESH_SCREEN.comment=Options related to block, entity, and hand models.
+screen.PP_SCREEN=Post Processing Settings
+screen.PP_SCREEN.comment=Options related to post processing.

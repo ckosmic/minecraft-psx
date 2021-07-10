@@ -1,0 +1,1 @@
+#include "/gbuffers_armor_glint.vsh"

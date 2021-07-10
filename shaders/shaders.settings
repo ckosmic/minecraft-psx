@@ -1,0 +1,27 @@
+/* PSX Shader by ckosmic */
+
+#ifdef gbuffers_solid
+	#define affine_mapping					//Toggles affine texture mapping
+	#define affine_clamp 2.0				//Adjusts texture coordinate bounds [0.0 1.0 2.0 3.0 4.0 5.0]
+	#define affine_clamp_enabled			//Enables clamping of texture coordinate bounds to avoid extreme stretching
+#endif
+
+#ifdef gbuffers_terrain
+	#define vertex_inaccuracy_terrain 15.0	//Inaccuracy of mesh vertices (higher = more snapping, lower = less snapping) [0.0 1.0 2.0 3.0 4.0 5.0 6.0 7.0 8.0 9.0 10.0 11.0 12.0 13.0 14.0 15.0 16.0 17.0 19.0 20.0 21.0 22.0 23.0 24.0 25.0]
+#endif
+
+#ifdef gbuffers_entities
+	#define vertex_inaccuracy_entities 15.0	//Inaccuracy of mesh vertices (higher = more snapping, lower = less snapping) [0.0 1.0 2.0 3.0 4.0 5.0 6.0 7.0 8.0 9.0 10.0 11.0 12.0 13.0 14.0 15.0 16.0 17.0 19.0 20.0 21.0 22.0 23.0 24.0 25.0]
+#endif
+
+#ifdef gbuffers_hand
+	#define vertex_inaccuracy_hand 10.0		//Inaccuracy of mesh vertices (higher = more snapping, lower = less snapping) [0.0 1.0 2.0 3.0 4.0 5.0 6.0 7.0 8.0 9.0 10.0 11.0 12.0 13.0 14.0 15.0 16.0 17.0 19.0 20.0 21.0 22.0 23.0 24.0 25.0]
+#endif
+
+#ifdef composite
+	#define resolution_scale 0.25			//Changes screen resolution multiplier [0.1 0.1111 0.125 0.1428 0.1667 0.2 0.25 0.3334 0.5 1.0]
+	#define dither_amount 0.005				//Adjusts screen-space dithering amount [0.0 0.001 0.002 0.003 0.004 0.005 0.006 0.007 0.008 0.009 0.01]
+	#define color_depth 24					//Adjusts output color depth (posterization effect) [2 4 8 12 16 24 32 64 128]
+	#define fog_enabled						//Toggles depth fog
+	#define fog_distance 300				//Adjusts fog distance [100 200 300 400 500 600 700 800 900 1000 1500 2000 2500 3000]
+#endif

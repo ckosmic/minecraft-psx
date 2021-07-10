@@ -10,7 +10,7 @@ Clone the repo and place it in your shaderpacks folder: `%appdata%\.minecraft\sh
 
 ## Known Issues
 
-- Beacon beams tilt and do weird things due to [this Optifine bug](https://github.com/sp614x/optifine/issues/4905).  If anyone knows the block entity ID of beacon beams or whatever it is to single it out in gbuffers_block, please let me know.
+- Beacon beams tilt and do weird things when terrain vertex snapping is on due to [this Optifine bug](https://github.com/sp614x/optifine/issues/4905).  If anyone knows the block entity ID of beacon beams or whatever it is to single it out in gbuffers_block, please let me know.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)

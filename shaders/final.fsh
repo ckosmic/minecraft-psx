@@ -16,7 +16,6 @@ uniform float aspectRatio;
 
 vec3 GetDither(vec2 pos, vec3 c, float intensity) {
 	int DITHER_THRESHOLDS[16] = int[]( -4, 0, -3, 1, 2, -2, 3, -1, -3, 1, -4, 0, 3, -1, 2, -2 );
-	int lut[DITHER_COLORS];
 	int index = (int(pos.x) & 3) * 4 + (int(pos.y) & 3);
 
 	c.xyz = clamp(c.xyz * (DITHER_COLORS-1) + DITHER_THRESHOLDS[index] * (intensity * 100), vec3(0), vec3(DITHER_COLORS-1));

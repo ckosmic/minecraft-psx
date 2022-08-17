@@ -95,7 +95,7 @@ void main() {
 	float fogDepth = depth * fog_distance - (fog_distance-1);
 	fogDepth = clamp(fogDepth, 0.0, 1.0);
 	#else
-	float fogDepth = sky;
+	float fogDepth = (sky) ? 1.0 : 0.0;
 	#endif
 	vec3 col = texture2D(colortex0, texcoord).rgb;
 	

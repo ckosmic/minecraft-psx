@@ -1,6 +1,6 @@
 option.affine_mapping=Affine Mapping
 option.affine_clamp=Texcoord Bounds
-option.affine_clamp_enabled=Clamp Texcoord Bounds
+option.affine_clamp_enabled=Clamp Texcoord Bounds (OptiFine only)
 
 option.vertex_inaccuracy_terrain=Terrain Vertex Inaccuracy
 option.vertex_inaccuracy_entities=Entity Vertex Inaccuracy

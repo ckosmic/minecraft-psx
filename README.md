@@ -19,5 +19,7 @@ Place the cloned repository folder or downloaded zip file in your `shaderpacks` 
 
 * Texture affine mapping behaviour on Iris does not exactly match that of OptiFine's. All affine mapped textures on Iris warp in the opposite direction compared to OptiFine, though this is not noticeable without comparing the two side-by-side.
 
+* In-universe text (signs, player/entity name tags, etc.) is difficult, if not nearly impossible to read. UI text and rendering are unaffected.
+
 ## License
 Licensed under the [MIT License](https://choosealicense.com/licenses/mit/).

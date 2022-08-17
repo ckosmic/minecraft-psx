@@ -1,6 +1,8 @@
 # Minecraft PS1 (PSX) Shaders
 A Minecraft shader pack for both [OptiFine](https://optifine.net/) and [Iris](https://irisshaders.net/) that mimics the look and feel of PlayStation 1 graphics.
 
+Tested to work with Minecraft 1.19.2 〜 1.7.10, but it most likely will work just fine with newer versions, too.
+
 ## Video Demonstration
 <a href="https://www.youtube.com/watch?v=6n_WGBEuRGY" target="_blank"><strong>PlayStation 1 Graphics in Minecraft (Minecraft PSX Shader Pack)</strong><br><img src="https://img.youtube.com/vi/6n_WGBEuRGY/maxresdefault.jpg" width="640"></a>
 

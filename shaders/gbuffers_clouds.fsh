@@ -4,8 +4,6 @@
 #extension GL_EXT_gpu_shader4 : enable
 #extension GL_ARB_shader_texture_lod : enable
 
-uniform vec2 texelSize;
-
 varying vec4 texcoord;
 varying vec4 color;
 

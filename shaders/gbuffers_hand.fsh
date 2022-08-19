@@ -6,8 +6,6 @@
 #define gbuffers_solid
 #include "/shaders.settings"
 
-uniform vec2 texelSize;
-
 varying vec4 texcoord;
 varying vec4 lmcoord;
 varying vec4 color;

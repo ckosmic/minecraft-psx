@@ -4,7 +4,7 @@
 #ifdef gbuffers_solid
 	#define affine_mapping					//Toggles affine texture mapping
 	#define affine_clamp 2.0				//Adjusts texture coordinate bounds [0.0 1.0 2.0 3.0 4.0 5.0]
-	// #define affine_clamp_enabled			//Enables clamping of texture coordinate bounds to avoid extreme stretching. Disabled by default for now as it currently only works correctly on OptiFine. See README for more information. ※ TODO: Determine if there's some way to detect whether we're running on Iris or OptiFine from within GLSL code.
+	#define affine_clamp_enabled			//Enables clamping of texture coordinate bounds to avoid extreme stretching.
 #endif
 
 #ifdef gbuffers_terrain

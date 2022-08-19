@@ -16,9 +16,6 @@ Place the cloned repository folder or downloaded zip file in your `shaderpacks` 
 ## Known Issues
 * Beacon beams tilt and do weird things when terrain vertex snapping is on due to [OptiFine issue #4905](https://github.com/sp614x/optifine/issues/4905) (sp614x/optifine#4905).  If anyone knows the block entity ID of beacon beams or whatever it is to single it out in gbuffers_block, please let me know.
 
-* Texture affine map clamping ("Clamp Texcoord Bounds (OptiFine only)") is disabled by default in order to ensure that texture affine mapping works at all for Iris users. OptiFine users may want to re-enable this option in order to avoid extreme texture stretching on some geometry close to the camera at certain angles.
-	* The reason why this feature is broken is because it requires the use of a custom GLSL uniform (`texelSize`), but custom uniforms are not supported on Iris yet — see [Iris issue #1027](https://github.com/IrisShaders/Iris/issues/1027) (IrisShaders/Iris#1027).
-
 * Texture affine mapping behaviour on Iris does not exactly match that of OptiFine's. All affine mapped textures on Iris warp in the opposite direction compared to OptiFine, though this is not noticeable without comparing the two side-by-side.
 
 * In-universe text (signs, player/entity name tags, etc.) is difficult, if not nearly impossible to read. UI text and rendering are unaffected.

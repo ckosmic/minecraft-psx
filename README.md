@@ -18,7 +18,8 @@ Place the cloned repository folder or downloaded zip file in your `shaderpacks` 
 
 * Texture affine mapping behaviour on Iris does not exactly match that of OptiFine's. All affine mapped textures on Iris warp in the opposite direction compared to OptiFine, though this is not noticeable without comparing the two side-by-side.
 
-* In-universe text (signs, player/entity name tags, etc.) is difficult, if not nearly impossible to read. UI text and rendering are unaffected.
+* In-universe text (signs, player/entity name tags, etc.) can be difficult, if not nearly impossible to read without zooming (or moving very close to the text in question) due to the mesh vertex distortion effect affecting the mesh that in-universe text is rendered to. Glow ink signs are notable for being the most illegible due to the fact that the glow ink effect is in itself rendered as a secondary mesh behind the already-existing text mesh.
+	* Text rendering on UI elements (chat, inventory screens, etc.) is completely unaffected.
 
 ## License
 Licensed under the [MIT License](https://choosealicense.com/licenses/mit/).

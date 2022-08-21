@@ -6,7 +6,8 @@
 #define gbuffers_solid
 #include "/shaders.settings"
 
-uniform vec2 texelSize;
+uniform float viewWidth;
+uniform float viewHeight;
 
 varying vec4 texcoord;
 varying vec4 texcoordAffine;
@@ -21,6 +22,7 @@ uniform sampler2D lightmap;
 void main() {
 	#ifdef affine_mapping
 	#ifdef affine_clamp_enabled
+	vec2 texelSize = vec2(1.0/viewWidth, 1.0/viewHeight);
 	vec2 affine = AffineMapping(texcoordAffine, texcoord, texelSize, affine_clamp);
 	#else
 	vec2 affine = texcoordAffine.xy / texcoordAffine.z;

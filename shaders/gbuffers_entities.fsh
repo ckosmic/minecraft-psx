@@ -12,10 +12,10 @@ varying vec4 lmcoord;
 varying vec4 color;
 varying vec4 normalMat;
 
-
+uniform float viewWidth;
+uniform float viewHeight;
 uniform sampler2D texture;
 uniform sampler2D lightmap;
-uniform vec2 texelSize;
 uniform vec4 entityColor;
 uniform vec3 skyColor;
 
@@ -25,6 +25,7 @@ uniform vec3 skyColor;
 void main() {
 	#ifdef affine_mapping
 	#ifdef affine_clamp_enabled
+	vec2 texelSize = vec2(1.0/viewWidth, 1.0/viewHeight);
 	vec2 affine = AffineMapping(texcoordAffine, texcoord, texelSize, affine_clamp * 4.0);
 	#else
 	vec2 affine = texcoordAffine.xy / texcoordAffine.z;
